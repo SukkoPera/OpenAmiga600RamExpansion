@@ -1,5 +1,3 @@
 (fp_lib_table
-  (lib (name Connectors_4UCON)(type KiCad)(uri "$(KIPRJMOD)/kicad_microbit_connector/Connectors_4UCON.pretty")(options "")(descr ""))
-  (lib (name digikey-footprints)(type KiCad)(uri "$(KIPRJMOD)/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
   (lib (name OpenAmiga600RamExpansion)(type KiCad)(uri "$(KIPRJMOD)/OpenAmiga600RamExpansion.pretty")(options "")(descr ""))
 )
