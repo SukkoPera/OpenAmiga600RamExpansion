@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/OpenAmiga600RamExpansion/OpenAmiga600RamExpansion.sch)
-    (date "gio 28 giu 2018 21:11:01 CEST")
+    (date "mar 07 ago 2018 00:57:14 CEST")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -75,7 +75,7 @@
       (tstamp 5B285B8E))
     (comp (ref D1)
       (value BAT54C)
-      (footprint smd_trans:sot23)
+      (footprint TO_SOT_Packages_SMD:SOT-23_Handsoldering)
       (libsource (lib device) (part D_x2_KCom_AAK))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B285C79))
@@ -397,8 +397,6 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical A600_TRAPDOOR)
@@ -406,7 +404,9 @@
     (library (logical NEC_424260)
       (uri /home/sukko/Documents/kicad/OpenAmiga600RamExpansion/libs/NEC_424260.lib))
     (library (logical MSM6242B)
-      (uri /home/sukko/Documents/kicad/OpenAmiga600RamExpansion/libs/MSM6242B.lib)))
+      (uri /home/sukko/Documents/kicad/OpenAmiga600RamExpansion/libs/MSM6242B.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib)))
   (nets
     (net (code 1) (name /rtc_wr)
       (node (ref U3) (pin 10))

@@ -626,7 +626,7 @@ U 1 1 5B285C79
 P 10600 2075
 F 0 "D1" H 10375 2000 50  0000 C CNN
 F 1 "BAT54C" H 10600 2175 50  0000 C CNN
-F 2 "smd_trans:sot23" H 10600 2075 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 10600 2075 50  0001 C CNN
 F 3 "" H 10600 2075 50  0001 C CNN
 	1    10600 2075
 	-1   0    0    -1  
@@ -889,8 +889,6 @@ Text Notes 10375 1800 0    60   ~ 0
 220-470R\nis fine
 Text Notes 10650 2500 0    60   ~ 0
 BAT721C\nis also\nfine
-Text Notes 2525 7450 0    60   ~ 0
-Required RAM Type is 4 Mbit (256k×16) 70-80 ns DRAM, e.g.:\n- Hitachi HM514260AJ8, HM514260JP8\n- NEC µPD424260\n- Samsung KM416C256BJ\n- Hyundai HY514260BJC
 $Comp
 L VDD #PWR021
 U 1 1 5B2D3FCF
