@@ -24,7 +24,7 @@ The required RAM Type is 4 Mbit (256k×16) DRAM in the SOJ-40 package with up to
 |V53C16258HK50 |MOSEL VITELIC   |![No](doc/no.png)  |                                                                                      |[![PDF](doc/doc.png)](https://www.digchip.com/datasheets/parts/datasheet/308/V53C16258HK50-pdf.php)       |                                                                                     |
 |V53C16258SHK50|MOSEL VITELIC   |![Yes](doc/yes.png)|![Yes](doc/yes.png)  |[![PDF](doc/doc.png)](https://www.digchip.com/datasheets/parts/datasheet/308/V53C16258SHK50-pdf.php)      |                                                                                     |
 
-Normally it is not necessary to mount all the decoupling capacitors. I usually skip C2 and C4. All of them are 100nF in the 0805 package anyway.
+Normally it is not necessary to mount all the decoupling capacitors. I usually skip C2 and C4. All of them are 100nF in the 0805 package anyway. An additional 10uF electrolytics capacitor can be mounted as C9, if needed. Might be a good idea if using a Vampire or a power hungry machine.
 
 #### RTC
 The entire RTC circuit is optional. It has been designed for an Epson [RTC62421](http://pdf.datasheetcatalog.com/datasheets/90/339927_DS.pdf) or [RTC72421](http://pdf.datasheetcatalog.com/datasheet/epson/RTC-72423.pdf), which don't need an external crystal nor any calibration. Both can be bought very cheaply from China; they will most likely be second-hand "pulls", but usually they will work fine.
