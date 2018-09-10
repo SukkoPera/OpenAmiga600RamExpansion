@@ -1,47 +1,12 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:A600_TRAPDOOR
-LIBS:NEC_424260
-LIBS:MSM6242B
+EESchema Schematic File Version 4
 LIBS:OpenAmiga600RamExpansion-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "OpenAmiga600RamExpansion"
-Date "2018-06-28"
+Date "2018-09-10"
 Rev "1"
 Comp "SukkoPera"
 Comment1 ""
@@ -50,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L A600_TRAPDOOR CONN1
+L A600_TRAPDOOR:A600_TRAPDOOR CONN1
 U 1 1 5B26E03A
 P 2250 3550
 F 0 "CONN1" H 2575 5750 50  0000 C CNN
@@ -61,7 +26,7 @@ F 3 "DOCUMENTATION" H 2250 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NEC_424260 U2
+L NEC_424260:NEC_424260 U2
 U 1 1 5B26E187
 P 5875 2400
 F 0 "U2" H 6225 3625 50  0000 C CNN
@@ -72,7 +37,7 @@ F 3 "DOCUMENTATION" H 5875 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NEC_424260 U1
+L NEC_424260:NEC_424260 U1
 U 1 1 5B26E1FA
 P 5875 5025
 F 0 "U1" H 6250 6250 50  0000 C CNN
@@ -83,7 +48,7 @@ F 3 "DOCUMENTATION" H 5875 5025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR01
+L power:VCC #PWR01
 U 1 1 5B26E676
 P 1275 1125
 F 0 "#PWR01" H 1275 975 50  0001 C CNN
@@ -94,7 +59,7 @@ F 3 "" H 1275 1125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR02
+L power:VCC #PWR02
 U 1 1 5B26E6A7
 P 5000 1375
 F 0 "#PWR02" H 5000 1225 50  0001 C CNN
@@ -105,7 +70,7 @@ F 3 "" H 5000 1375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 5B26E7D2
 P 6750 3450
 F 0 "#PWR03" H 6750 3200 50  0001 C CNN
@@ -116,7 +81,7 @@ F 3 "" H 6750 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 5B26E855
 P 6750 6075
 F 0 "#PWR04" H 6750 5825 50  0001 C CNN
@@ -260,7 +225,7 @@ d9
 Text Label 6800 4975 0    60   ~ 0
 d8
 $Comp
-L VCC #PWR05
+L power:VCC #PWR05
 U 1 1 5B26E6C8
 P 5000 3975
 F 0 "#PWR05" H 5000 3825 50  0001 C CNN
@@ -336,7 +301,7 @@ Entry Wire Line
 	950  2400 1050 2500
 NoConn ~ 3000 5500
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 5B281428
 P 2250 6050
 F 0 "#PWR06" H 2250 5800 50  0001 C CNN
@@ -473,7 +438,7 @@ Entry Wire Line
 Entry Wire Line
 	850  3000 950  3100
 $Comp
-L VCC #PWR07
+L power:VCC #PWR07
 U 1 1 5B2839F1
 P 10500 725
 F 0 "#PWR07" H 10500 575 50  0001 C CNN
@@ -484,7 +449,7 @@ F 3 "" H 10500 725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 5B283A05
 P 10900 825
 F 0 "#PWR08" H 10900 575 50  0001 C CNN
@@ -495,7 +460,7 @@ F 3 "" H 10900 825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG09
+L power:PWR_FLAG #FLG09
 U 1 1 5B283A18
 P 10900 725
 F 0 "#FLG09" H 10900 800 50  0001 C CNN
@@ -506,7 +471,7 @@ F 3 "" H 10900 725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG010
+L power:PWR_FLAG #FLG010
 U 1 1 5B283A42
 P 10500 825
 F 0 "#FLG010" H 10500 900 50  0001 C CNN
@@ -533,7 +498,7 @@ d4
 Text Label 1075 2500 0    60   ~ 0
 d6
 $Comp
-L MSM6242B U3
+L MSM6242B:MSM6242B U3
 U 1 1 5B2856A6
 P 9500 3000
 F 0 "U3" H 9875 3650 50  0000 C CNN
@@ -544,7 +509,7 @@ F 3 "DOCUMENTATION" H 9500 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR011
+L power:VCC #PWR011
 U 1 1 5B285841
 P 10950 1450
 F 0 "#PWR011" H 10950 1300 50  0001 C CNN
@@ -555,7 +520,7 @@ F 3 "" H 10950 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 5B285858
 P 8600 3500
 F 0 "#PWR012" H 8600 3250 50  0001 C CNN
@@ -566,7 +531,7 @@ F 3 "" H 8600 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L OpenAmiga600RamExpansion-rescue:R R2
 U 1 1 5B285990
 P 8250 2000
 F 0 "R2" V 8330 2000 50  0000 C CNN
@@ -577,7 +542,7 @@ F 3 "" H 8250 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L OpenAmiga600RamExpansion-rescue:R R3
 U 1 1 5B285A9F
 P 8650 2000
 F 0 "R3" V 8730 2000 50  0000 C CNN
@@ -588,7 +553,7 @@ F 3 "" H 8650 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L OpenAmiga600RamExpansion-rescue:R R1
 U 1 1 5B285ACD
 P 8450 2000
 F 0 "R1" V 8530 2000 50  0000 C CNN
@@ -599,7 +564,7 @@ F 3 "" H 8450 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L OpenAmiga600RamExpansion-rescue:R R5
 U 1 1 5B285B00
 P 10225 1700
 F 0 "R5" V 10305 1700 50  0000 C CNN
@@ -610,7 +575,7 @@ F 3 "" H 10225 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L OpenAmiga600RamExpansion-rescue:R R4
 U 1 1 5B285B8E
 P 10950 1700
 F 0 "R4" V 11030 1700 50  0000 C CNN
@@ -621,7 +586,7 @@ F 3 "" H 10950 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_x2_KCom_AAK D1
+L OpenAmiga600RamExpansion-rescue:D_x2_KCom_AAK D1
 U 1 1 5B285C79
 P 10600 2075
 F 0 "D1" H 10375 2000 50  0000 C CNN
@@ -644,7 +609,7 @@ rtc_rd
 Text Label 10300 3400 0    60   ~ 0
 rtc_wr
 $Comp
-L Conn_01x02 J1
+L OpenAmiga600RamExpansion-rescue:Conn_01x02 J1
 U 1 1 5B28695B
 P 7925 2700
 F 0 "J1" H 7925 2800 50  0000 C CNN
@@ -657,7 +622,7 @@ $EndComp
 Text Label 7800 2475 0    60   ~ 0
 rtc_cs
 $Comp
-L VCC #PWR013
+L power:VCC #PWR013
 U 1 1 5B287478
 P 8450 1675
 F 0 "#PWR013" H 8450 1525 50  0001 C CNN
@@ -668,7 +633,7 @@ F 3 "" H 8450 1675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT1
+L OpenAmiga600RamExpansion-rescue:Battery_Cell BT1
 U 1 1 5B288A21
 P 9950 1750
 F 0 "BT1" H 10050 1850 50  0000 L CNN
@@ -679,7 +644,7 @@ F 3 "" V 9950 1810 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 5B288DE0
 P 9950 1925
 F 0 "#PWR014" H 9950 1675 50  0001 C CNN
@@ -692,7 +657,7 @@ $EndComp
 NoConn ~ 3000 5200
 NoConn ~ 1500 5300
 $Comp
-L C C1
+L OpenAmiga600RamExpansion-rescue:C C1
 U 1 1 5B289DD4
 P 9300 5825
 F 0 "C1" H 9325 5925 50  0000 L CNN
@@ -703,7 +668,7 @@ F 3 "" H 9300 5825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L OpenAmiga600RamExpansion-rescue:C C2
 U 1 1 5B289E72
 P 9550 5825
 F 0 "C2" H 9575 5925 50  0000 L CNN
@@ -714,7 +679,7 @@ F 3 "" H 9550 5825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L OpenAmiga600RamExpansion-rescue:C C3
 U 1 1 5B289EBE
 P 9800 5825
 F 0 "C3" H 9825 5925 50  0000 L CNN
@@ -725,7 +690,7 @@ F 3 "" H 9800 5825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR015
+L power:VCC #PWR015
 U 1 1 5B28AC5A
 P 9550 5475
 F 0 "#PWR015" H 9550 5325 50  0001 C CNN
@@ -736,7 +701,7 @@ F 3 "" H 9550 5475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L power:GND #PWR016
 U 1 1 5B28AE98
 P 9550 6175
 F 0 "#PWR016" H 9550 5925 50  0001 C CNN
@@ -747,7 +712,7 @@ F 3 "" H 9550 6175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L OpenAmiga600RamExpansion-rescue:C C4
 U 1 1 5B28B917
 P 10300 5825
 F 0 "C4" H 10325 5925 50  0000 L CNN
@@ -758,7 +723,7 @@ F 3 "" H 10300 5825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L OpenAmiga600RamExpansion-rescue:C C5
 U 1 1 5B28B91D
 P 10550 5825
 F 0 "C5" H 10575 5925 50  0000 L CNN
@@ -769,7 +734,7 @@ F 3 "" H 10550 5825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L OpenAmiga600RamExpansion-rescue:C C6
 U 1 1 5B28B923
 P 10800 5825
 F 0 "C6" H 10825 5925 50  0000 L CNN
@@ -780,7 +745,7 @@ F 3 "" H 10800 5825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR017
+L power:VCC #PWR017
 U 1 1 5B28B92E
 P 10550 5475
 F 0 "#PWR017" H 10550 5325 50  0001 C CNN
@@ -791,7 +756,7 @@ F 3 "" H 10550 5475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 5B28B934
 P 10550 6175
 F 0 "#PWR018" H 10550 5925 50  0001 C CNN
@@ -802,7 +767,7 @@ F 3 "" H 10550 6175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C7
+L OpenAmiga600RamExpansion-rescue:C C7
 U 1 1 5B28C6BC
 P 9275 4300
 F 0 "C7" H 9300 4400 50  0000 L CNN
@@ -813,7 +778,7 @@ F 3 "" H 9275 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C8
+L OpenAmiga600RamExpansion-rescue:C C8
 U 1 1 5B28C6C8
 P 9775 4300
 F 0 "C8" H 9800 4400 50  0000 L CNN
@@ -824,7 +789,7 @@ F 3 "" H 9775 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 5B28C6DB
 P 9525 4650
 F 0 "#PWR019" H 9525 4400 50  0001 C CNN
@@ -867,7 +832,7 @@ rtc_d1
 Text Label 3250 4100 0    60   ~ 0
 rtc_d3
 $Comp
-L PWR_FLAG #FLG020
+L power:PWR_FLAG #FLG020
 U 1 1 5B2AF6BC
 P 10100 825
 F 0 "#FLG020" H 10100 900 50  0001 C CNN
@@ -890,7 +855,7 @@ Text Notes 10375 1800 0    60   ~ 0
 Text Notes 10650 2500 0    60   ~ 0
 BAT721C\nis also\nfine
 $Comp
-L VDD #PWR021
+L power:VDD #PWR021
 U 1 1 5B2D3FCF
 P 10100 725
 F 0 "#PWR021" H 10100 575 50  0001 C CNN
@@ -901,7 +866,7 @@ F 3 "" H 10100 725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VDD #PWR022
+L power:VDD #PWR022
 U 1 1 5B2D4149
 P 10600 2600
 F 0 "#PWR022" H 10600 2450 50  0001 C CNN
@@ -912,7 +877,7 @@ F 3 "" H 10600 2600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VDD #PWR023
+L power:VDD #PWR023
 U 1 1 5B2D4334
 P 9525 3950
 F 0 "#PWR023" H 9525 3800 50  0001 C CNN
@@ -923,7 +888,7 @@ F 3 "" H 9525 3950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J99
+L OpenAmiga600RamExpansion-rescue:Conn_01x01 J99
 U 1 1 5B2E5101
 P 6775 7525
 F 0 "J99" H 6775 7625 50  0000 C CNN
@@ -936,7 +901,7 @@ $EndComp
 NoConn ~ 6775 7325
 NoConn ~ 3000 5300
 $Comp
-L R R6
+L OpenAmiga600RamExpansion-rescue:R R6
 U 1 1 5B333232
 P 8275 5600
 F 0 "R6" V 8355 5600 50  0000 C CNN
@@ -947,10 +912,10 @@ F 3 "" H 8275 5600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D2
+L OpenAmiga600RamExpansion-rescue:LED L1
 U 1 1 5B3332C7
 P 8550 5875
-F 0 "D2" H 8550 5975 50  0000 C CNN
+F 0 "L1" H 8550 5975 50  0000 C CNN
 F 1 "LED" H 8550 5775 50  0000 C CNN
 F 2 "OpenAmiga600RamExpansion:LED_0805_HandSoldering_ModSilkS" H 8550 5875 50  0001 C CNN
 F 3 "" H 8550 5875 50  0001 C CNN
@@ -958,7 +923,7 @@ F 3 "" H 8550 5875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VCC #PWR024
+L power:VCC #PWR024
 U 1 1 5B3336B4
 P 8025 5525
 F 0 "#PWR024" H 8025 5375 50  0001 C CNN
@@ -969,7 +934,7 @@ F 3 "" H 8025 5525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR025
+L power:GND #PWR025
 U 1 1 5B333704
 P 8550 6100
 F 0 "#PWR025" H 8550 5850 50  0001 C CNN
@@ -982,17 +947,17 @@ $EndComp
 Text Notes 7775 5225 0    60   ~ 0
 Power LED
 Wire Wire Line
-	1275 1125 1275 1600
+	1275 1125 1275 1225
 Wire Wire Line
 	1275 1225 3175 1225
 Wire Wire Line
 	1275 1600 1500 1600
 Wire Wire Line
-	5000 1375 5000 3350
+	5000 1375 5000 1450
 Wire Wire Line
 	5000 1450 5125 1450
 Wire Wire Line
-	5000 3975 5000 5975
+	5000 3975 5000 4075
 Wire Wire Line
 	5000 4075 5125 4075
 Wire Wire Line
@@ -1015,7 +980,7 @@ Connection ~ 1275 1225
 Wire Wire Line
 	6750 3350 6625 3350
 Wire Wire Line
-	6750 1450 6750 3450
+	6750 1450 6750 1950
 Wire Wire Line
 	6625 1450 6750 1450
 Connection ~ 6750 3350
@@ -1023,7 +988,7 @@ Wire Wire Line
 	6625 1950 6750 1950
 Connection ~ 6750 1950
 Wire Wire Line
-	6750 4075 6750 6075
+	6750 4075 6750 4575
 Wire Wire Line
 	6750 5975 6625 5975
 Wire Wire Line
@@ -1048,10 +1013,6 @@ Wire Wire Line
 	5125 2250 4825 2250
 Wire Wire Line
 	5125 2350 4825 2350
-Wire Bus Line
-	4725 675  4725 4875
-Wire Bus Line
-	950  675  7075 675 
 Wire Wire Line
 	6625 1550 6975 1550
 Wire Wire Line
@@ -1100,8 +1061,6 @@ Wire Wire Line
 	5125 4875 4825 4875
 Wire Wire Line
 	5125 4975 4825 4975
-Wire Bus Line
-	7075 675  7075 5075
 Wire Wire Line
 	3000 1800 3400 1800
 Wire Wire Line
@@ -1134,18 +1093,14 @@ Wire Wire Line
 	1500 2400 1050 2400
 Wire Wire Line
 	1500 2500 1050 2500
-Wire Bus Line
-	3500 675  3500 2600
-Wire Bus Line
-	950  675  950  2400
 Wire Wire Line
 	1275 5400 1500 5400
 Wire Wire Line
-	1275 1700 1275 5950
+	1275 1700 1275 2600
 Wire Wire Line
-	1275 5950 3175 5950
+	1275 5950 2250 5950
 Wire Wire Line
-	3175 5950 3175 1700
+	3175 5950 3175 5400
 Wire Wire Line
 	3175 5400 3000 5400
 Wire Wire Line
@@ -1160,8 +1115,6 @@ Connection ~ 1275 5400
 Wire Wire Line
 	1500 1700 1275 1700
 Connection ~ 1275 2600
-Wire Bus Line
-	3500 675  3475 675 
 Wire Wire Line
 	3175 1700 3000 1700
 Connection ~ 3175 2600
@@ -1172,7 +1125,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 6350 7175 6350
 Wire Wire Line
-	7175 6350 7175 2550
+	7175 6350 7175 5175
 Wire Wire Line
 	7175 2550 6625 2550
 Wire Wire Line
@@ -1186,7 +1139,7 @@ Wire Wire Line
 Wire Wire Line
 	5125 2650 4150 2650
 Wire Wire Line
-	4150 2650 4150 6550
+	4150 2650 4150 5275
 Wire Wire Line
 	4150 5275 5125 5275
 Wire Wire Line
@@ -1249,11 +1202,7 @@ Wire Wire Line
 Wire Wire Line
 	5125 5875 4525 5875
 Wire Bus Line
-	7600 800  7600 5975
-Wire Bus Line
 	850  800  7600 800 
-Wire Bus Line
-	4425 800  4425 5775
 Wire Wire Line
 	3000 3000 3500 3000
 Wire Wire Line
@@ -1272,10 +1221,6 @@ Wire Wire Line
 	1500 3000 950  3000
 Wire Wire Line
 	1500 3100 950  3100
-Wire Bus Line
-	3600 800  3600 3100
-Wire Bus Line
-	850  800  850  3000
 Wire Wire Line
 	1500 3300 975  3300
 Wire Wire Line
@@ -1283,7 +1228,7 @@ Wire Wire Line
 Wire Wire Line
 	975  6450 7275 6450
 Wire Wire Line
-	7275 6450 7275 2650
+	7275 6450 7275 5275
 Wire Wire Line
 	7275 5275 6625 5275
 Wire Wire Line
@@ -1323,7 +1268,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 3300 8400 3300
 Wire Wire Line
-	8125 2700 8750 2700
+	8125 2700 8250 2700
 Wire Wire Line
 	8125 2600 8175 2600
 Wire Wire Line
@@ -1333,7 +1278,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 2800 8750 2800
 Wire Wire Line
-	8450 2150 8450 2800
+	8450 2150 8450 2250
 Wire Wire Line
 	10250 2900 10350 2900
 Wire Wire Line
@@ -1342,13 +1287,13 @@ Wire Wire Line
 	10350 2250 8450 2250
 Connection ~ 8450 2250
 Wire Wire Line
-	8450 1675 8450 1850
+	8450 1675 8450 1775
 Wire Wire Line
 	8650 2150 8650 2600
 Wire Wire Line
 	8650 2600 8750 2600
 Wire Wire Line
-	8250 1775 8650 1775
+	8250 1775 8450 1775
 Wire Wire Line
 	8250 2150 8250 2700
 Connection ~ 8250 2700
@@ -1368,43 +1313,43 @@ Wire Wire Line
 Wire Wire Line
 	9300 5675 9300 5575
 Wire Wire Line
-	9300 5575 9800 5575
+	9300 5575 9550 5575
 Wire Wire Line
 	9800 5575 9800 5675
 Wire Wire Line
-	9550 5475 9550 5675
+	9550 5475 9550 5575
 Connection ~ 9550 5575
 Wire Wire Line
 	9300 5975 9300 6075
 Wire Wire Line
-	9300 6075 9800 6075
+	9300 6075 9550 6075
 Wire Wire Line
 	9800 6075 9800 5975
 Wire Wire Line
-	9550 5975 9550 6175
+	9550 5975 9550 6075
 Connection ~ 9550 6075
 Wire Wire Line
 	10300 5675 10300 5575
 Wire Wire Line
-	10300 5575 10800 5575
+	10300 5575 10550 5575
 Wire Wire Line
 	10800 5575 10800 5675
 Wire Wire Line
-	10550 5475 10550 5675
+	10550 5475 10550 5575
 Connection ~ 10550 5575
 Wire Wire Line
 	10300 5975 10300 6075
 Wire Wire Line
-	10300 6075 10800 6075
+	10300 6075 10550 6075
 Wire Wire Line
 	10800 6075 10800 5975
 Wire Wire Line
-	10550 5975 10550 6175
+	10550 5975 10550 6075
 Connection ~ 10550 6075
 Wire Wire Line
 	9275 4150 9275 4050
 Wire Wire Line
-	9275 4050 9775 4050
+	9275 4050 9525 4050
 Wire Wire Line
 	9775 4050 9775 4150
 Wire Wire Line
@@ -1413,7 +1358,7 @@ Connection ~ 9525 4050
 Wire Wire Line
 	9275 4450 9275 4550
 Wire Wire Line
-	9275 4550 9775 4550
+	9275 4550 9525 4550
 Wire Wire Line
 	9775 4550 9775 4450
 Wire Wire Line
@@ -1487,4 +1432,88 @@ Wire Notes Line
 	7725 6400 7725 5100
 Wire Notes Line
 	7725 5100 8925 5100
+Wire Wire Line
+	5000 1450 5000 1950
+Wire Wire Line
+	5000 4075 5000 4575
+Wire Wire Line
+	5000 4575 5000 5975
+Wire Wire Line
+	5000 1950 5000 3350
+Wire Wire Line
+	1275 1225 1275 1600
+Wire Wire Line
+	6750 3350 6750 3450
+Wire Wire Line
+	6750 1950 6750 2750
+Wire Wire Line
+	6750 5975 6750 6075
+Wire Wire Line
+	6750 4575 6750 5375
+Wire Wire Line
+	2250 5950 3175 5950
+Wire Wire Line
+	3175 5400 3175 2600
+Wire Wire Line
+	1275 5400 1275 5950
+Wire Wire Line
+	1275 2600 1275 5400
+Wire Wire Line
+	3175 2600 3175 1700
+Wire Wire Line
+	4150 5275 4150 6550
+Wire Wire Line
+	6750 2750 6750 3350
+Wire Wire Line
+	6750 5375 6750 5975
+Wire Wire Line
+	7275 5275 7275 2650
+Wire Wire Line
+	7175 5175 7175 2550
+Wire Wire Line
+	8450 2250 8450 2800
+Wire Wire Line
+	8250 2700 8750 2700
+Wire Wire Line
+	8450 1775 8450 1850
+Wire Wire Line
+	8450 1775 8650 1775
+Wire Wire Line
+	9550 5575 9800 5575
+Wire Wire Line
+	9550 5575 9550 5675
+Wire Wire Line
+	9550 6075 9800 6075
+Wire Wire Line
+	9550 6075 9550 6175
+Wire Wire Line
+	10550 5575 10800 5575
+Wire Wire Line
+	10550 5575 10550 5675
+Wire Wire Line
+	10550 6075 10800 6075
+Wire Wire Line
+	10550 6075 10550 6175
+Wire Wire Line
+	9525 4050 9775 4050
+Wire Wire Line
+	9525 4550 9775 4550
+Wire Bus Line
+	950  675  7075 675 
+Wire Bus Line
+	3600 800  3600 3100
+Wire Bus Line
+	850  800  850  3000
+Wire Bus Line
+	3500 675  3500 2600
+Wire Bus Line
+	950  675  950  2400
+Wire Bus Line
+	7600 800  7600 5975
+Wire Bus Line
+	4425 800  4425 5775
+Wire Bus Line
+	4725 675  4725 4875
+Wire Bus Line
+	7075 675  7075 5075
 $EndSCHEMATC

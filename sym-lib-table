@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name OpenAmiga600RamExpansion-rescue)(type Legacy)(uri ${KIPRJMOD}/OpenAmiga600RamExpansion-rescue.lib)(options "")(descr ""))
+  (lib (name A600_TRAPDOOR)(type Legacy)(uri ${KIPRJMOD}/libs/A600_TRAPDOOR.lib)(options "")(descr ""))
+  (lib (name NEC_424260)(type Legacy)(uri ${KIPRJMOD}/libs/NEC_424260.lib)(options "")(descr ""))
+  (lib (name MSM6242B)(type Legacy)(uri ${KIPRJMOD}/libs/MSM6242B.lib)(options "")(descr ""))
+)
