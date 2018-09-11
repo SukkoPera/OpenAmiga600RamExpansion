@@ -6,7 +6,7 @@ OpenAmiga600RamExpansion is an Open Hardware 1 MB Chip RAM Expansion for the Com
 ### Summary
 The Amiga 600 computer by Commodore originally came with 1 MB of Chip RAM. Like all "compact" Amiga models, it has a trapdoor in the bottom, through which a memory expansion can be installed, bringing the chip RAM to a maximum of 2 MB.
 
-Some expansions also came with a Real-Time Clock (RTC), which allowed the Amiga to keep track of the current date and time, which is most useful for AmigaDOS. While this was mostly ordinary for Amiga 500 expansions, it was not so common on Amiga 600 expansions, and even most expansions designed today do not bear an RTC circuit.
+Back in the day, some expansions also came with a Real-Time Clock (RTC), which allowed the Amiga to keep track of the current date and time, which is most useful if you use AmigaDOS a lot. While this was mostly ordinary for Amiga 500 expansions, it was not so common on those for the Amiga 600, and even most expansions designed today do not bear an RTC circuit.
 
 OpenAmiga600RamExpansion is an Open Hardware implementation of such an expansion, including the RTC.
 
