@@ -1,11 +1,18 @@
 # OpenAmiga600RamExpansion
-Open Hardware 1 MB Chip RAM Expansion for the Commodore Amiga 600 Computer
+OpenAmiga600RamExpansion is an Open Hardware 1 MB Chip RAM Expansion for the Commodore Amiga 600 Computer with optional Real Time Clock.
 
-# WORK IN PROGRESS!
+![Board](https://raw.githubusercontent.com/SukkoPera/OpenAmiga600RamExpansion/master/doc/render-top.png)
+
+### Summary
+The Amiga 600 computer by Commodore originally came with 1 MB of Chip RAM. Like all "compact" Amiga models, it has a trapdoor in the bottom, through which a memory expansion can be installed, bringing the chip RAM to a maximum of 2 MB.
+
+Some expansions also came with a Real-Time Clock (RTC), which allowed the Amiga to keep track of the current date and time, which is most useful for AmigaDOS. While this was mostly ordinary for Amiga 500 expansions, it was not so common on Amiga 600 expansions, and even most expansions designed today do not bear an RTC circuit.
+
+OpenAmiga600RamExpansion is an Open Hardware implementation of such an expansion, including the RTC.
 
 ### Components
 #### Connector
-The female connector for the male edge connector on the A600 PCB is probably the hardest part to get hold of. Many people use PCI connectors, but they are longer and need to be trimmed. They are also hard to solder, most of the time. This project uses [a connector](https://coolcomponents.co.uk/products/edge-connector-for-bbc-micro-bit) that is normally used with the [micro:bit educational computer](http://microbit.org) instead. It was discovered by chance to be a perfect fit for the the A600, cheap and reliable.
+The female connector for the male edge connector on the A600 PCB is probably the hardest part to get hold of. Many people use PCI connectors, which have the correct pitch but are longer and need to be trimmed. They are also hard to solder, most of the time. This project uses [a connector](https://coolcomponents.co.uk/products/edge-connector-for-bbc-micro-bit) that is normally used with the [micro:bit educational computer](http://microbit.org) instead. It was discovered by chance to be a perfect fit for the the A600, cheap and reliable.
 
 #### Memory
 The required RAM Type is 4 Mbit (256k×16) DRAM in the SOJ-40 package with up to 70-80 ns access time, e.g.:
@@ -24,7 +31,11 @@ The required RAM Type is 4 Mbit (256k×16) DRAM in the SOJ-40 package with up to
 |V53C16258HK50 |MOSEL VITELIC   |![No](doc/no.png)  |                                                                                      |[![PDF](doc/doc.png)](https://www.digchip.com/datasheets/parts/datasheet/308/V53C16258HK50-pdf.php)       |                                                                                     |
 |V53C16258SHK50|MOSEL VITELIC   |![Yes](doc/yes.png)|![Yes](doc/yes.png)  |[![PDF](doc/doc.png)](https://www.digchip.com/datasheets/parts/datasheet/308/V53C16258SHK50-pdf.php)      |                                                                                     |
 
-Normally it is not necessary to mount all the decoupling capacitors. I usually skip C2 and C4. All of them are 100nF in the 0805 package anyway. An additional 10uF electrolytics capacitor can be mounted as C9, if needed. Might be a good idea if using a Vampire or a power hungry machine.
+Most of these chips can be found on eBay or on AliExpress very cheaply (i.e.: 1-2€ each).
+
+Normally it is not necessary to mount all the decoupling capacitors. I usually skip C2 and C4. All of them are 100nF in the 0805 package anyway. An additional 10uF electrolytic capacitor can be mounted at C9, if needed. Might be a good idea if using a Vampire or a power hungry machine.
+
+RAM chips can either be soldered directly on the board or installed in sockets. While soldering the chips might not be trivial for the unexperienced, sockets for the SOJ-40 package are quite expensive and not really easier to solder, so it's your choice.
 
 #### RTC
 The entire RTC circuit is optional. It has been designed for an Epson [RTC62421](http://pdf.datasheetcatalog.com/datasheets/90/339927_DS.pdf) or [RTC72421](http://pdf.datasheetcatalog.com/datasheet/epson/RTC-72423.pdf), which don't need an external crystal nor any calibration. Both can be bought very cheaply from China; they will most likely be second-hand "pulls", but usually they will work fine.
@@ -38,12 +49,33 @@ The other components have some degree of flexibility:
 - Battery Holder: Some cheap eBay one, usually called *BS-7*
 - Battery: CR2032 3V Non-Rechargeable Lithium (a new one will last years)
 
-Note that if you plan to store your Amiga or not to use it in a while, **you are recommended to remove the battery**. Failing to do this killed many A500+ computers and many A501 expansions in the past. The CR2032 battery used in this project is probably safer than the batteries used in those devices, but still I would not leave one in an unused Amiga. You have been warned.
+Note that if you plan to store your Amiga or not to use it in a while, **you are recommended to remove the RTC battery**. Failing to do this killed many A500+ computers and many A501 expansions in the past. The CR2032 battery used in this project is probably safer than the batteries used in those devices, but still I would not leave one in an unused Amiga. You have been warned.
+
+### Installation
+After everything has been soldered, just open the trapdoor on your Amiga, install the expansion (the correct orientation is with the chips closer to the keyboard) and put the cover back on.
+
+I recommend to run [SysTest](https://github.com/keirf/Amiga-Stuff) then. Use the Memory option (F1), it must show 2 MB of Chip RAM. Then start the Memory Test (F1 again) and let it run for 50-100 rounds: if it doesn't find any errors, you are probaly good to go.
+
+SysTest also has an option for reading and resetting the RTC (F7 then F3), so try that as well. Currently it does not support setting the date and time, so you will have to use other tools for that (Workbench is a good candidate).
 
 ### License
 OpenAmiga600RamExpansion is Open Hardware. If you make any modifications to the board, please contribute them back.
 
-### Get Support
+### Disclaimer
+OpenAmiga600RamExpansion is provided to you 'as is' and without any express or implied warranties whatsoever with respect to its functionality, operability or use, including, without limitation, any implied warranties of merchantability, fitness for a particular purpose or infringement. We expressly disclaim any liability whatsoever for any direct, indirect, consequential, incidental or special damages, including, without limitation, lost revenues, lost profits, losses resulting from business interruption or loss of data, regardless of the form of action or legal theory under which the liability may be asserted, even if advised of the possibility or likelihood of such damages.
+
+### Support the Project
+Since the project is open you are free to get the PCBs made by your preferred manufacturer, however in case you want to support the development, you can order them from PCBWay through this link:
+
+[![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/OpenAmiga600RamExpansion_V1.html)
+
+You get my gratitude and cheap, professionally-made and good quality PCBs, I get some credit that will help with this and [other projects](https://www.pcbway.com/project/member/shareproject/?bmbid=41100). You won't even have to worry about the various PCB options, it's all pre-configured for you!
+
+Also, if you still have to register to that site, [you can use this link](https://www.pcbway.com/setinvite.aspx?inviteid=41100) to get some bonus initial credit (and yield me some more).
+
+Again, if you want to use another manufacturer, feel free to, don't feel obligated :).
+
+### Get Help
 If you need help or have questions, you can join [the official Telegram group](https://t.me/joinchat/HUHdWBC9J9JnYIrvTYfZmg).
 
 ### Thanks
