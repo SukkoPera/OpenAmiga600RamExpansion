@@ -33,12 +33,12 @@ The required RAM Type is 4 Mbit (256k×16) DRAM in the SOJ-40 package with up to
 
 Most of these chips can be found on eBay or on AliExpress very cheaply (i.e.: 1-2€ each).
 
-Normally it is not necessary to mount all the decoupling capacitors. I usually skip C2 and C4. All of them are 100nF in the 0805 package anyway. An additional 10uF electrolytic capacitor can be mounted at C9, if needed. Might be a good idea if using a Vampire or a power hungry machine.
+Normally it is not necessary to mount all the decoupling capacitors. I usually skip C2 and C4. All of them are 100nF in the 0805 package anyway. An additional 10uF electrolytic capacitor can be mounted at C9, if needed. Might be a good idea if using a *Vampire* board or a power-hungry machine.
 
-RAM chips can either be soldered directly on the board or installed in sockets. While soldering the chips might not be trivial for the unexperienced, sockets for the SOJ-40 package are quite expensive and not really easier to solder, so it's your choice.
+RAM chips can either be soldered directly on the board or installed in sockets. While soldering the chips might not be trivial for the unexperienced, sockets for the SOJ-40 package are quite expensive and not really easier to solder either, so the choice is up to you.
 
 #### RTC
-The entire RTC circuit is optional. It has been designed for an Epson [RTC62421](http://pdf.datasheetcatalog.com/datasheets/90/339927_DS.pdf) or [RTC72421](http://pdf.datasheetcatalog.com/datasheet/epson/RTC-72423.pdf), which don't need an external crystal nor any calibration. Both can be bought very cheaply from China; they will most likely be second-hand "pulls", but usually they will work fine.
+The entire RTC circuit is optional. It has been designed for an Epson [RTC62421](http://pdf.datasheetcatalog.com/datasheets/90/339927_DS.pdf) or [RTC72421](http://pdf.datasheetcatalog.com/datasheet/epson/RTC-72423.pdf), which don't need an external crystal nor any calibration. Both can be bought very cheaply from China: they will most likely be second-hand "pulls", but usually they will work fine.
 
 The other components have some degree of flexibility:
 - C7: 100 nF 0805 capacitor
@@ -49,12 +49,12 @@ The other components have some degree of flexibility:
 - Battery Holder: Some cheap eBay one, usually called *BS-7*
 - Battery: CR2032 3V Non-Rechargeable Lithium (a new one will last years)
 
-Note that if you plan to store your Amiga or not to use it in a while, **you are recommended to remove the RTC battery**. Failing to do this killed many A500+ computers and many A501 expansions in the past. The CR2032 battery used in this project is probably safer than the batteries used in those devices, but still I would not leave one in an unused Amiga. You have been warned.
+Note that if you plan to shelve your Amiga or not to use it for a while, **you are recommended to remove the RTC battery**. Failing to do so killed many A500+ computers and many A501 expansions in the past. The CR2032 battery used in this project is probably safer than the barrel batteries used in those devices, but still I would not leave one in an unused Amiga. You have been warned.
 
 ### Installation
 After everything has been soldered, just open the trapdoor on your Amiga, install the expansion (the correct orientation is with the chips closer to the keyboard) and put the cover back on.
 
-I recommend to run [SysTest](https://github.com/keirf/Amiga-Stuff) then. Use the Memory option (F1), it must show 2 MB of Chip RAM. Then start the Memory Test (F1 again) and let it run for 50-100 rounds: if it doesn't find any errors, you are probaly good to go.
+I recommend to run [SysTest](https://github.com/keirf/Amiga-Stuff) then. Use the Memory option (F1), it must show 2 MB of Chip RAM. Then start the Memory Test (F1 again) and let it run for 50-100 rounds: if it doesn't find any errors, you are probably good to go.
 
 SysTest also has an option for reading and resetting the RTC (F7 then F3), so try that as well. Currently it does not support setting the date and time, so you will have to use other tools for that (Workbench is a good candidate).
 
