@@ -56,7 +56,7 @@ After everything has been soldered, just open the trapdoor on your Amiga, instal
 
 I recommend to run [SysTest](https://github.com/keirf/Amiga-Stuff) then. Use the Memory option (<kbd>F1</kbd>), it must show 2 MB of Chip RAM. Then start the Memory Test (<kbd>F1</kbd> again) and let it run for 50-100 rounds: if it doesn't find any errors, you are probably good to go.
 
-SysTest also has an option for reading and resetting the RTC (<kbd>F7</kbd> then <kbd>F3</kbd>), so try that as well. If you are using SysTest >= 1.2, you can also set the date and time with it, otherwise you will have to use other tools for that (Workbench is a good candidate).
+SysTest also has an option for reading and resetting the RTC (<kbd>F7</kbd> then <kbd>F3</kbd>), so try that as well. If you are using SysTest >= 1.2 you can also set the date and time with it, otherwise you will have to use other tools (Workbench is a good candidate).
 
 ### License
 OpenAmiga600RamExpansion is Open Hardware. If you make any modifications to the board, please contribute them back.
