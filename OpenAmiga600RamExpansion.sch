@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:OpenAmiga600RamExpansion-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -9,7 +9,7 @@ Title "OpenAmiga600RamExpansion"
 Date "2018-09-10"
 Rev "1"
 Comp "SukkoPera"
-Comment1 ""
+Comment1 "Licensed under CERN OHL v.1.2"
 Comment2 ""
 Comment3 ""
 Comment4 ""
