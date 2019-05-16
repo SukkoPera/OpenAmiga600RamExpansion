@@ -54,9 +54,9 @@ Note that if you plan to shelve your Amiga or not to use it for a while, **you a
 ### Installation
 After everything has been soldered, just open the trapdoor on your Amiga, install the expansion (the correct orientation is with the chips closer to the keyboard) and put the cover back on.
 
-I recommend to run [SysTest](https://github.com/keirf/Amiga-Stuff) then. Use the Memory option (<kbd>F1</kbd>), it must show 2 MB of Chip RAM. Then start the Memory Test (<kbd>F1</kbd> again) and let it run for 50-100 rounds: if it doesn't find any errors, you are probably good to go.
+I recommend to run [Amiga Test Kit (formerly SysTest)](https://github.com/keirf/Amiga-Stuff) then. Use the Memory option (<kbd>F1</kbd>), it must show 2 MB of Chip RAM. Then start the Memory Test (<kbd>F1</kbd> again) and let it run for 50-100 rounds: if it doesn't find any errors, you are probably good to go.
 
-SysTest also has an option for reading and resetting the RTC (<kbd>F7</kbd> then <kbd>F3</kbd>), so try that as well. If you are using SysTest >= 1.2 you can also set the date and time with it, otherwise you will have to use other tools (Workbench is a good candidate).
+Amiga Test Kit also has an option for reading and resetting the RTC (<kbd>F7</kbd> then <kbd>F3</kbd>), so try that as well. If you are using Amiga Test Kit or SysTest >= 1.2 you can also set the date and time with it, otherwise you will have to use other tools (Workbench is a good candidate).
 
 ### License
 The OpenAmiga600RamExpansion documentation, including the design itself, is copyright &copy; SukkoPera 2019.
