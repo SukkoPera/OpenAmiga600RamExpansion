@@ -10,6 +10,8 @@ Back in the day, some expansions also came with a Real-Time Clock (RTC), which a
 
 OpenAmiga600RamExpansion is an Open Hardware implementation of such an expansion, including the RTC.
 
+Once you have maximized the Chip RAM in your A600, you might be interested in adding some **Fast** RAM as well: please check out [OpenAmiga600FastRamExpansion](https://github.com/SukkoPera/OpenAmiga600FastRamExpansion) in case.
+
 ### Components
 #### Connector
 The female connector for the male edge connector on the A600 PCB is probably the hardest part to get hold of. Many people use PCI connectors, which have the correct pitch but are longer and need to be trimmed. They are also hard to solder, most of the time. This project uses [a connector](https://coolcomponents.co.uk/products/edge-connector-for-bbc-micro-bit) that is normally used with the [micro:bit educational computer](http://microbit.org) instead. It was discovered by chance to be a perfect fit for the the A600, cheap and reliable.
