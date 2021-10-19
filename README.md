@@ -61,6 +61,9 @@ I recommend to run [Amiga Test Kit (formerly SysTest)](https://github.com/keirf/
 
 Amiga Test Kit also has an option for reading and resetting the RTC (<kbd>F7</kbd> then <kbd>F3</kbd>), so try that as well. If you are using Amiga Test Kit or SysTest >= 1.2 you can also set the date and time with it, otherwise you will have to use other tools (Workbench is a good candidate).
 
+### Issues
+The board has been thoroughly tested and it works perfectly, but if you are trying to understand how it works, please be aware that [there are some oddities in the schematics](https://github.com/SukkoPera/OpenAmiga600RamExpansion/issues/7).
+
 ### License
 The OpenAmiga600RamExpansion documentation, including the design itself, is copyright &copy; SukkoPera 2019.
 
